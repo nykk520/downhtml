@@ -6,7 +6,6 @@ window.onload = function () {
     if (indexList.length > 0) {
         indexList.forEach((item, index) => {
             var listTitleItem = '';
-            var listDownItem = '';
             if (index == 0) {
                 setData(item);
                 listTitleItem = '<div class="list-title-item list-title-item-active">' + item.title + '</div>';
@@ -14,7 +13,6 @@ window.onload = function () {
                 listTitleItem = '<div class="list-title-item">' + item.title + '</div>';
             }
             
-            $(".list-items").append(listDownItem);
             $(".list-title").append(listTitleItem);
 
             
